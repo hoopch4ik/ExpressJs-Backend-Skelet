@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "lib": ["ES2020"],                   
+    "strict": true,
+    "esModuleInterop": true,                 
+    "skipLibCheck": true,                     
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@config/*": ["./config/*"],
+      "@utils/*": ["./utils/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@models/*": ["./models/*"],
+      "@mwares/*": ["./middlewares/*"],
+      "@routes/*": ["./routes/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@interfaces/*": ["./interfaces/*"],
+      "@logging/*": ["./logging/*"],
+      "@*": ["./*"],
+    },
+    "useUnknownInCatchVariables": false,
+    "types": ["vitest/globals"],
+  },
+  "include": [
+    "src/**/*.ts",
+  ],
+  "exclude": [
+    "src/public/*"
+  ]
+}
