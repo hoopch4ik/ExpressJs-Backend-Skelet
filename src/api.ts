@@ -1,4 +1,4 @@
-import { seregaRouter } from '@routes/seregaRouter';import express from 'express';
+import express from 'express';
 
 
 
